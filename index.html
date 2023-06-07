@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Leens Adventure</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <!-- <a href="images/logo.jpg" class="log"></a> -->
+                <!-- <img src="images/logo.jpg" class="log"> -->
+                <a href = "index.html" class = "site-brand">
+                    Leens <span>Adventure</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link"><b>Home</b></a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Adventure on a budget!</h1>
+                    <p>Embark on unforgetable adventures. Explore diverse destionations, immerse in vibrant cultures and create lasting memories. Start your journey now!</p>
+                </div>
+                <!-- <div class = "header-form">
+                    <h2>Choose your Travel location:</h2>
+                    <form class = "flex">
+                        <input type = "text" class = "form-control" placeholder="Destination name">
+                        <input type="date" class = "form-control" placeholder="Date">
+                        <input type="number" class = "form-control" placeholder="Price ($)">
+                        <input type="submit" class = "btn" value = "Search">
+                    </form>
+                </div> -->
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- featured section -->
+        <section id = "featured" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">know about some places before your travel</span>
+                    <h2 class = "lg-title">featured places</h2>
+                </div>
+
+                <div class = "featured-row">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/sydney.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Sydney
+                            </span>
+                            <div>
+                                <p class = "text">Dive into the energetic fusion of urban excitement and coastal bliss in Sydney, where iconic landmarks, golden beaches, and thrilling adventures await your exploration.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/kuala lumpur.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Kuala Lumpur
+                            </span>
+                            <div>
+                                <p class = "text">Indulge in the vibrant tapestry of cultures, tantalizing flavors, towering skyscrapers, and captivating nightlife that make Kuala Lumpur an irresistible destination for the senses.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/mumbai.webp" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Mumbai
+                            </span>
+                            <div>
+                                <p class = "text"> Immerse yourself in the intoxicating allure of Mumbai, where Bollywood dreams come alive amidst bustling markets, sizzling street food, architectural wonders, and a pulsating city rhythm.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/zanzibar.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Zanzibar
+                            </span>
+                            <div>
+                                <p class = "text">Surrender to the allure of Zanzibar's paradise-like shores, where pristine beaches, crystal-clear waters, aromatic spice markets, and an aura of tranquility beckon you to unwind and explore.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/nairobi.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Nairobi
+                            </span>
+                            <div>
+                                <p class = "text">Unleash your adventurous spirit in Nairobi, a vibrant metropolis brimming with wildlife encounters, cultural treasures, vibrant markets, and the gateway to awe-inspiring African safaris.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/naivasha.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Naivasha
+                            </span>
+                            <div>
+                                <p class = "text"> Escape to the enchanting tranquility of Naivasha, Kenya, where lush landscapes, exotic wildlife, shimmering lakes, and breathtaking vistas create an idyllic haven for serenity seekers and nature enthusiasts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of featured section -->
+
+        <!-- services section -->
+        <section id = "services" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">These are just but a few among the many services we offer</span>
+                    <p class="text">We offer affordable packages with great experiences 🤗😚</p>
+                    <h2 class = "lg-title">Our services</h2>
+                </div>
+
+                <div class = "services-row">
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-hotel"></i>
+                        </span>
+                        <h3>Accommodation</h3>
+                        <p class = "text">Find cozy stays that exceed expectations. Comfortable, stylish and tailored to your needs, our accommodation provide a home away from home.</p>
+                        <a href = "contact.html" class = "btn">Contact for more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <h3>Travel Guide</h3>
+                        <p class = "text">Unlock hidden gems and insider tips. Our travel guide offers expert recommendations, detailed itineraries and essential information for an unforgettable journey.</p>
+                        <a href = "contact.html" class = "btn">Contact for more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-solid fa-users"></i>
+                        </span>
+                        <h3>Group Travel</h3>
+                        <p class = "text">Embark on shared adventures. From family reunions to corporate gataways, our group travel services ensure seamless coordination, unforgettable experiences and cherished memories</p>
+                        <a href = "contact.html" class = "btn">Contact for more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-money-bill"></i>
+                        </span>
+                        <h3>Suitable Price</h3>
+                        <p class = "text">Experience quality without breaking the bank. Our accommodations offer affordable rates that deliver exceptional value, ensuring a budget-friendly and enjoyable stay</p>
+                        <a href = "contact.html" class = "btn">Contact for more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-solid fa-headset"></i>
+                        </span>
+                        <h3>24/7 Support</h3>
+                        <p class = "text">We're here for you around the clock. Our dedicated support team is ready to assist you anytime, ensuring peace of mind throught your travel journey</p>
+                        <a href = "contact.html" class = "btn">Contact for more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-solid fa-book"></i>
+                        </span>
+                        <h3>Bookings</h3>
+                        <p class = "text">We have simplified your travel arrangements with our ease-to-use booking platform, secure the best deals for accommodations, flights, tours and more all at your finger tips</p>
+                        <a href = "contact.html" class = "btn">Contact for more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of services section -->
+
+        <!-- testimonials section -->
+        <section id = "testimonials" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">what our clients say about us</span>
+                    <h2 class = "lg-title">testimonials</h2>
+                </div>
+
+                <div class = "test-row">
+                    <div class = "test-item">
+                        <p class = "text">Booking with them was a game-changer! Their impeccable service, meticulous attention to detail, and personalized touches made our trip truly unforgettable. Highly recommended for an extraordinary and seamless travel experience that exceeds all expectations.</p>
+                        <div class = "test-item-info">
+                            <img src = "images/tim.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Timothy Yator</h3>
+                                <p class = "text">Trip to Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">Outstanding! The team went above and beyond to create a group travel experience that surpassed our wildest dreams. Their expertise ensured every moment was extraordinary, leaving us with cherished memories to treasure forever.</p>
+                        <div class = "test-item-info">
+                            <img src = "images/leen.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Gurleen Kaur</h3>
+                                <p class = "text">Trip to Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">Our dream vacation came to life, thanks to their exceptional expertise. From breathtaking destinations to luxurious accommodations, they crafted a personalized itinerary that went above and beyond our expectations. An unforgettable journey we'll forever treasure.</p>
+                        <div class = "test-item-info">
+                            <img src = "images/mettto.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Brenda Cherotich</h3>
+                                <p class = "text">Trip to Kuala Lumpur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of testimonials section -->
+
+        <!-- video section -->
+        <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "videos/video-section.mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+            </div>
+        </section>
+        <!-- end of video section -->
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Leens <span>Adventure</span>
+                    </a>
+                    <p class = "text">Unlock the doors to a world of extraordinary travel experiences with Leens Adventure. Let our expert team be your compass as you traverse the globe, immersing yourself in remarkable adventures and creating cherished memories that will ignite your wanderlust and shape your soul forever.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "https://web.facebook.com/leensadventures">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.instagram.com/leensadventure/">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://twitter.com/leen_adventures">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.tiktok.com/@leens_adventure?lang=en">
+                                <i class = "fab fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href = "https://www.visitacity.com/en/nairobi?gclid=CjwKCAjw1YCkBhAOEiwA5aN4AScFC9ihfloH2EPT7D0BHfQf5Wsm8kvfa1XRw6KTqN6Eda6H2UQtIhoCej0QAvD_BwE">Nairobi</a></li>
+                        <li><a href = "https://www.getyourguide.com/-l171/?cmp=ga&cq_src=google_ads&cq_cmp=15508267435&cq_con=132581189684&cq_term=kuala%20lumpur%20destinations&cq_med=&cq_plac=&cq_net=s&cq_pos=&cq_plt=gp&campaign_id=15508267435&adgroup_id=132581189684&target_id=kwd-309466505926&loc_physical_ms=1009824&match_type=e&ad_id=569299683558&keyword=kuala%20lumpur%20destinations&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gclid=CjwKCAjw1YCkBhAOEiwA5aN4Ac5yN677XgzLi5jyOxdEm1hm7wTUHMhTXO6Nw8rQ_vRoUi2wGTN87BoC4XYQAvD_BwE">Kuala Lumpur</a></li>
+                        <li><a href = "https://www.fabhotels.com/blog/places-to-visit-in-mumbai/">Mumbai</a></li>
+                        <li><a href = "https://www.go2africa.com/destinations/zanzibar/where-to-go">Zanzibar</a></li>
+                        <li><a href = "https://www.sydney.com/things-to-do/attractions">Sydney</a></li>
+                    </ul>
+                </div>
+
+                <!-- <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "sumbmit" class = "btn" value = "Subscribe">
+                    </form>
+                </div> -->
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023; Designed by <span class="designer">Leens </span>Adventure</p>
+        </div>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+    </body>
+</html>
